@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	font-family: 'Open Sans', Helvetica, Tahoma, Arial, STXihei, "Microsoft YaHei", SimSun, Heiti, sans-serif;
+}
+#showdate,#confirm{
+	height: 20px;
+	width: 200px;
+	margin: 2px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	border-radius: 2px;
+	border:solid 1px #B9B7B7;
+	outline: none;
+	box-shadow:0px 0px 5px #94CEDC;
+	text-align: center;
+}
+#confirm{
+	border:none;
+	box-shadow:none;
+}
+#confirm button{
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 2px;
+	border:solid 1px #B5B5B5;
+	background: #ECEBEB;
+	outline: none;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 400;
+
+}
+#calendar{
+	height: 240px;
+	width: 240px;
+	/*
+	margin: 10px;*/
+	margin-right: auto;
+	margin-left: auto;
+	border:1px solid #B9B8B8;
+	cursor: default;
+	/*
+	display: none;
+	*/
+}
+#header,#content{
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 600;
+}
+#header{
+	height: 12.5%;
+	width: 100%;
+	background:#D40606;
+	color:#F2F2F2;	
+}
+#header p,#header div{
+	display: inline-block;
+	vertical-align: middle;
+}
+#header p{
+	height: 100%;
+	line-height: 200%;
+}
+#content{
+	height: 87.5%;
+	width: 100%;
+	color: #6B6B6B;
+	
+}
+.weekend{
+	color: #D40606;
+}
+.unavailable{
+	color: #D1D1D1;
+}
+.tri{
+	width: 0px;
+	height: 0px;
+	border-top: 15px solid transparent;
+	border-right: 15px solid #F2F2F2;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid transparent;
+	-webkit-transform: scale(0.5,0.5);
+	-ms-transform:scale(0.5,0.5);
+	float: left;
+	cursor: pointer;
+}
+.right{
+	border-right: 15px solid transparent;
+	border-left: 15px solid #F2F2F2;
+	float: right;
+}
+.select{
+	background: #D40606;
+	color: #ffffff;
+}
+.period{
+	background: #9ADFF1;
+}
+.dtri{
+	width: 0px;
+	height: 0px;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	-webkit-transform: scale(0.5,0.5);
+	-ms-transform:scale(0.5,0.5);
+	cursor: pointer;
+}
+
+.doubletrilef{
+	float: left;
+	width: 30px;
+}
+.doubletrilef .dtri{
+	border-right: 15px solid #F2F2F2;
+}
+.doubletrilef>:last-child{
+	margin-left: -7.5px;
+}
+.doubletririg{
+	float: right;
+	width: 30px;
+}
+.doubletririg .dtri{
+	border-left: 15px solid #F2F2F2;
+}
+.doubletririg>:first-child{
+	margin-right: -7.5px;
+}
